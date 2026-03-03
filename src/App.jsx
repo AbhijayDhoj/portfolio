@@ -143,18 +143,7 @@ const App = () => {
         style={{ borderTop: "none", padding: 0 }}
       >
         {/* --- BLOCK 1: THE STICKY BIO --- */}
-        <div
-          className="sticky-bio-wrapper"
-          style={{
-            position: "sticky",
-            top: 0,
-            height: "100dvh",
-            zIndex: 1,
-            display: "flex",
-            alignItems: "center",
-            backgroundColor: "#ffffff",
-          }}
-        >
+        <div className="sticky-bio-wrapper">
           <div className="grid-container reveal" style={{ width: "100%" }}>
                 <section
                 className="about-section"

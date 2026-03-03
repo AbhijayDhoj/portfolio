@@ -291,6 +291,17 @@ nav {
 } */
 
 /* --- ABOUT SECTION --- */
+.sticky-bio-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+
 .about-section {
   grid-column: span 12;
   margin-top: 5vh;
@@ -717,11 +728,19 @@ footer {
   .about-bio {
     grid-column: 1 / -1;
   }
+  .sticky-bio-wrapper {
+    position: relative;
+    height: auto;
+    display: block;
+    background-color: transparent;
+  }
   .about-section {
     display: flex; /* Maintain flex only on mobile */
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
+    padding: 3rem 1.5rem; /* Add specific about padding here */
+    margin-bottom: 5rem;
   }
   .about-meta {
     width: 100%;

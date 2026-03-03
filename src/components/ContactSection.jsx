@@ -1,6 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ContactSection = ({ onCursorHover }) => {
+  const [status, setStatus] = useState(""); // "" | "submitting" | "success" | "error"
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("submitting");
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      setStatus("error");
+    }
+  };
   return (
     <div className="contact-section" id="contact">
       <h2 className="contact-header">GET IN TOUCH</h2>
@@ -24,6 +52,7 @@ const ContactSection = ({ onCursorHover }) => {
           className="contact-form"
           action="https://formspree.io/f/mreaweqn" // Replace "xyz" with your actual Formspree endpoint ID later
           method="POST"
+          onSubmit={handleSubmit}
         >
           <div className="form-group">
             <input
@@ -79,11 +108,18 @@ const ContactSection = ({ onCursorHover }) => {
           <button
             type="submit"
             className="submit-btn"
+            disabled={status === "submitting" || status === "success"}
             onMouseEnter={() => onCursorHover(true)}
             onMouseLeave={() => onCursorHover(false)}
+            style={{
+              backgroundColor: status === "success" ? "#4BB543" : "",
+              color: status === "success" ? "#fff" : "",
+              cursor: (status === "submitting" || status === "success") ? "default" : "pointer"
+            }}
           >
-            SEND MESSAGE
+            {status === "submitting" ? "SENDING..." : status === "success" ? "MESSAGE SENT!" : "SEND MESSAGE"}
           </button>
+          {status === "error" && <p style={{ color: "red", marginTop: "1rem" }}>Oops! There was a problem submitting your form.</p>}
         </form>
       </div>
     </div>

@@ -90,6 +90,7 @@ nav {
   position: sticky;
   top: 0;
   height: 100vh;
+  height: 100dvh; /* iOS Safari fix for bottom navigation bar jumping */
   width: 100%;
   overflow: hidden;
   background: #000;
@@ -260,6 +261,7 @@ nav {
   cursor: grab;
   scroll-behavior: smooth;
   padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch; /* iOS Native Momentum scrolling */
 }
 .gallery-container::-webkit-scrollbar {
   display: none;
@@ -381,6 +383,13 @@ footer {
   mix-blend-mode: exclusion;
 }
 
+/* iOS / Touch Device Fix: Hide the custom cursor completely if the device relies on touch (coarse pointer) */
+@media (hover: none) and (pointer: coarse) {
+  .cursor-dot {
+    display: none !important;
+  }
+}
+
 /* --- GALLERY ACCORDION STYLES --- */
 .gallery-block-header {
   background: #000;
@@ -440,6 +449,7 @@ footer {
   /* Hide scrollbar */
   scrollbar-width: none;
   -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch; /* iOS smooth scrolling */
 }
 .horizontal-scroll-container::-webkit-scrollbar {
   display: none;

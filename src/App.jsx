@@ -145,49 +145,56 @@ const App = () => {
         {/* --- BLOCK 1: THE STICKY BIO --- */}
         <div className="sticky-bio-wrapper">
           <div className="grid-container reveal" style={{ width: "100%" }}>
-                <section
-                className="about-section"
-                id="about"
-              >
-                <div className="about-meta">
-                  <div className="meta-group">
-                    <span className="meta-label">Based In</span>Kathmandu,
-                    Nepal
-                    <br />
-                    Bagmati Province
-                  </div>
-                  <div className="meta-group">
-                    <span className="meta-label">Expertise</span>Music
-                    Production
-                    <br />
-                    Live Performance
-                    <br />
-                    Photography
-                  </div>
-                  <div className="meta-group">
-                    <span className="meta-label">Connect</span>
-                    <a href="https://www.instagram.com/abhijay.adh/" target="_blank" rel="noopener noreferrer" style={{textDecoration: "underline", color: "inherit"}}>Instagram</a>
-                    <br />
-                    <a href="https://www.youtube.com/@Abhijayy" target="_blank" rel="noopener noreferrer" style={{textDecoration: "underline", color: "inherit"}}>YouTube</a>
-                    <br />
-                    <a href="https://open.spotify.com/user/317td3ye3grz7d2xrotk4stxyo4m?si=edb60fdab1a84ff2" target="_blank" rel="noopener noreferrer" style={{textDecoration: "underline", color: "inherit"}}>Spotify</a>
-                  </div>
+            <section
+              className="about-section"
+              id="about"
+            >
+              <div className="about-meta">
+                <div className="meta-group">
+                  <span className="meta-label">Based In</span>Kathmandu,
+                  Nepal
+                  <br />
+                  Bagmati Province
                 </div>
-                <div className="about-bio">
-                  <p>
-                    Musician, singer-songwriter, and producer exploring the
-                    intersection of sound and visual art.
-                    <br />
-                    <br />
-                    My work is rooted in the stories I see and rawness of live
-                    performance. From the chaotic streets of Kathmandu to the
-                    silence of the Mustang mountains, I document what I see and
-                    translate what I hear.
-                  </p>
+                <div className="meta-group">
+                  <span className="meta-label">Expertise</span>Music
+                  Production
+                  <br />
+                  Live Performance
+                  <br />
+                  Photography
+                  <br />
+                  Mentorship & Teaching
+                  <br />
+                  Travel Management
                 </div>
-              </section>
-            </div>
+                <div className="meta-group">
+                  <span className="meta-label">Connect</span>
+                  <a href="https://www.instagram.com/abhijay.adh/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline", color: "inherit" }}>Instagram</a>
+                  <br />
+                  <a href="https://www.youtube.com/@Abhijayy" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline", color: "inherit" }}>YouTube</a>
+                  <br />
+                  <a href="https://open.spotify.com/user/317td3ye3grz7d2xrotk4stxyo4m?si=edb60fdab1a84ff2" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline", color: "inherit" }}>Spotify</a>
+                </div>
+              </div>
+              <div className="about-bio">
+                <p>
+                  Musician, singer-songwriter, and producer exploring the
+                  intersection of sound and visual art.
+                  <br />
+                  <br />
+                  My work is rooted in the stories I see and rawness of live
+                  performance. From the chaotic streets of Kathmandu to the
+                  silence of the Mustang mountains, I document what I see and
+                  translate what I hear.
+                  <br />
+                  <br />
+                  Beyond that, I steer a travel company - curating raw, immersive journeys through these same landscapes.
+                </p>
+              </div>
+            </section>
           </div>
+        </div>
 
         {/* --- BLOCK 2: THE MAIN CONTENT CARD --- */}
         <div
@@ -340,12 +347,7 @@ const App = () => {
               ]}
               onCursorHover={setIsHoveringBlock}
             />
-            <GalleryBlock
-              title="KULEKHANI"
-              year="2024"
-              images={[ASSETS.kul1]}
-              onCursorHover={setIsHoveringBlock}
-            />
+
           </div>
 
           <div className="reveal">

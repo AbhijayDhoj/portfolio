@@ -715,7 +715,7 @@ footer {
     white-space: normal;
   }
   .hero-image {
-    object-position: 35% center; /* Adjusts which part of the image is shown, effectively sliding the subject right/left */
+    object-position: 10% center;
   }
   .layout-narrow-left,
   .layout-stepped-right,

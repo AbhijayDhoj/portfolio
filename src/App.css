@@ -58,9 +58,11 @@ nav {
 /* --- PRELOADER --- */
 .preloader-container {
   padding: 2.5rem 3rem;
-  box-sizing: border-box; /* ensure padding doesn't affect 100% height */
+  box-sizing: border-box;
+  /* ensure padding doesn't affect 100% height */
   height: 100vh;
-  height: 100dvh; /* Use dynamic viewport height for mobile URL bars */
+  height: 100dvh;
+  /* Use dynamic viewport height for mobile URL bars */
 }
 
 .preloader-text {
@@ -90,7 +92,8 @@ nav {
   position: sticky;
   top: 0;
   height: 100vh;
-  height: 100dvh; /* iOS Safari fix for bottom navigation bar jumping */
+  height: 100dvh;
+  /* iOS Safari fix for bottom navigation bar jumping */
   width: 100%;
   overflow: hidden;
   background: #000;
@@ -165,13 +168,16 @@ nav {
 .layout-narrow-left {
   grid-column: 2 / span 5;
 }
+
 .layout-stepped-right {
   grid-column: 7 / span 5;
   margin-top: 25vh;
 }
+
 .layout-wide-offset {
   grid-column: 1 / span 11;
 }
+
 .layout-wide-center {
   grid-column: 3 / span 8;
 }
@@ -220,6 +226,7 @@ nav {
   /* filter: grayscale(100%); */
   transition: filter 0.5s ease;
 }
+
 .video-wrapper:hover iframe {
   filter: grayscale(0%);
 }
@@ -229,12 +236,14 @@ nav {
   position: relative;
   width: 100%;
 }
+
 .gallery-controls {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
   margin-bottom: 1rem;
 }
+
 .arrow-btn {
   background: none;
   border: 2px solid #000;
@@ -249,6 +258,7 @@ nav {
   justify-content: center;
   transition: all 0.3s ease;
 }
+
 .arrow-btn:hover {
   background: #000;
   color: #fff;
@@ -261,22 +271,27 @@ nav {
   cursor: grab;
   scroll-behavior: smooth;
   padding-bottom: 10px;
-  -webkit-overflow-scrolling: touch; /* iOS Native Momentum scrolling */
+  -webkit-overflow-scrolling: touch;
+  /* iOS Native Momentum scrolling */
 }
+
 .gallery-container::-webkit-scrollbar {
   display: none;
 }
+
 .gallery-track {
   display: inline-flex;
   gap: 1rem;
   padding-right: 4rem;
 }
+
 .gallery-item {
   flex: 0 0 45vw;
   height: 60vh;
   position: relative;
   background: #000;
 }
+
 /* .gallery-img {
   width: "auto";
   height: 100%;
@@ -324,6 +339,7 @@ nav {
   border-top: 1px solid #ccc;
   padding-top: 0.5rem;
 }
+
 .meta-group:first-child {
   border-top: none;
   padding-top: 0;
@@ -355,6 +371,7 @@ nav {
   border-top: 2px solid #000;
   padding-top: 1rem;
 }
+
 .project-title {
   font-size: 1.5rem;
   font-weight: 700;
@@ -367,6 +384,7 @@ footer {
   font-weight: 700;
   opacity: 0.5;
 }
+
 /* --- CUSTOM CURSOR --- */
 .cursor-dot {
   /* width: 20px;
@@ -383,7 +401,8 @@ footer {
     width 0.3s,
     height 0.3s,
     background-color 0.3s;
-  mix-blend-mode: difference; /* Ensures visibility on black & white */
+  mix-blend-mode: difference;
+  /* Ensures visibility on black & white */
 }
 
 /* State when hovering a block */
@@ -460,8 +479,10 @@ footer {
   /* Hide scrollbar */
   scrollbar-width: none;
   -ms-overflow-style: none;
-  -webkit-overflow-scrolling: touch; /* iOS smooth scrolling */
+  -webkit-overflow-scrolling: touch;
+  /* iOS smooth scrolling */
 }
+
 .horizontal-scroll-container::-webkit-scrollbar {
   display: none;
 }
@@ -483,7 +504,8 @@ footer {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  opacity: 0; /* Hidden by default */
+  opacity: 0;
+  /* Hidden by default */
   transition:
     opacity 0.3s ease,
     transform 0.2s ease;
@@ -496,15 +518,18 @@ footer {
 }
 
 .gallery-arrow-btn:active {
-  transform: translateY(-50%) scale(0.9); /* Click effect */
+  transform: translateY(-50%) scale(0.9);
+  /* Click effect */
 }
 
 .arrow-left {
   left: 2vw;
 }
+
 .arrow-right {
   right: 2vw;
 }
+
 /* --- MUSIC SECTION --- */
 .music-section {
   padding: 0 4rem;
@@ -534,14 +559,17 @@ footer {
   cursor: pointer;
   padding-left: 1rem;
   padding-right: 1rem;
-  user-select: none; /* Prevents text highlighting on click */
-  -webkit-user-select: none; /* Safari support */
+  user-select: none;
+  /* Prevents text highlighting on click */
+  -webkit-user-select: none;
+  /* Safari support */
 }
 
 .track-row:hover {
   background: #000;
   color: #fff;
-  padding-left: 1rem; /* Indent on hover */
+  padding-left: 1rem;
+  /* Indent on hover */
   cursor: pointer;
 }
 
@@ -555,16 +583,19 @@ footer {
   font-weight: 700;
   opacity: 0.5;
 }
+
 .track-title {
   font-weight: 700;
   font-size: 1.2rem;
   text-transform: uppercase;
 }
+
 .track-control {
   font-weight: 700;
   font-size: 0.9rem;
   text-align: center;
 }
+
 .track-time {
   text-align: right;
   font-variant-numeric: tabular-nums;
@@ -577,12 +608,14 @@ footer {
 
 /* --- ORIGINAL WORK (MAGAZINE LAYOUT) --- */
 .original-work-container {
-  grid-column: 1 / -1; /* Spans all 12 columns of your grid */
+  grid-column: 1 / -1;
+  /* Spans all 12 columns of your grid */
 }
 
 .magazine-layout {
   display: grid;
-  grid-template-columns: 7fr 5fr; /* 7 columns left, 5 columns right */
+  grid-template-columns: 7fr 5fr;
+  /* 7 columns left, 5 columns right */
   gap: 2rem;
   width: 100%;
 }
@@ -606,7 +639,8 @@ footer {
 }
 
 .magazine-small .image-mask {
-  height: calc(25vh - 1rem); /* Exactly half the hero height minus the gap */
+  height: calc(25vh - 1rem);
+  /* Exactly half the hero height minus the gap */
   width: 100%;
 }
 
@@ -621,12 +655,14 @@ footer {
 .magazine-item:hover .magazine-img {
   filter: grayscale(0%);
 }
+
 /* --- GEAR SECTION STYLES --- */
 .gear-section-wrapper {
   position: relative;
   width: 80%;
   /* height: 110%; */
-  overflow: hidden; /* Keeps the floating items inside */
+  overflow: hidden;
+  /* Keeps the floating items inside */
   background-color: #111;
   margin: 0 auto;
 }
@@ -641,7 +677,8 @@ footer {
 }
 
 .gear-item img {
-  width: 100px; /* Base size for gear */
+  width: 100px;
+  /* Base size for gear */
   height: auto;
   filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.4));
   transition:
@@ -650,17 +687,20 @@ footer {
 }
 
 .gear-item:hover {
-  z-index: 20; /* Brings item to front when hovered */
+  z-index: 20;
+  /* Brings item to front when hovered */
 }
 
 .gear-item:hover img {
-  transform: scale(1.1) rotate(-5deg); /* Playful hover interaction */
+  transform: scale(1.1) rotate(-5deg);
+  /* Playful hover interaction */
   filter: drop-shadow(0px 30px 40px rgba(0, 0, 0, 0.6));
 }
 
 .gear-tooltip {
   position: absolute;
-  top: 110%; /* Positions it just below the image */
+  top: 110%;
+  /* Positions it just below the image */
   background: #fff;
   color: #000;
   padding: 0.5rem 1rem;
@@ -669,7 +709,8 @@ footer {
   letter-spacing: 0.05em;
   border-radius: 4px;
   white-space: nowrap;
-  pointer-events: none; /* Prevents the tooltip from blocking mouse events */
+  pointer-events: none;
+  /* Prevents the tooltip from blocking mouse events */
   opacity: 0;
   transform: translateY(10px);
   transition:
@@ -688,35 +729,47 @@ footer {
     width: 100px;
   }
 }
+
 @media (max-width: 768px) {
   .magazine-layout {
-    grid-template-columns: 1fr; /* Stacks vertically on mobile */
+    grid-template-columns: 1fr;
+    /* Stacks vertically on mobile */
   }
+
   .magazine-hero .image-mask,
   .magazine-small .image-mask {
     height: 40vh;
   }
 }
+
 @media (max-width: 768px) {
   .preloader-container {
     padding: 1.5rem;
-    justify-content: space-around; /* Give it even spacing rather than forcing to the edges */
+    justify-content: space-around;
+    /* Give it even spacing rather than forcing to the edges */
   }
+
   .preloader-text {
     font-size: 1rem;
-    white-space: normal; /* allow wrap if needed */
+    white-space: normal;
+    /* allow wrap if needed */
   }
+
   .preloader-number {
-    font-size: 3.5rem; /* Significantly reduce on mobile */
+    font-size: 3.5rem;
+    /* Significantly reduce on mobile */
     line-height: 1;
   }
+
   .hero-title {
     font-size: clamp(3rem, 12vw, 6rem);
     white-space: normal;
   }
+
   .hero-image {
-    object-position: 10% center;
+    object-position: 1.6% center;
   }
+
   .layout-narrow-left,
   .layout-stepped-right,
   .layout-wide-offset,
@@ -724,78 +777,100 @@ footer {
     grid-column: 1 / -1;
     margin-top: 5rem;
   }
+
   .about-meta,
   .about-bio {
     grid-column: 1 / -1;
   }
+
   .sticky-bio-wrapper {
     position: relative;
     height: auto;
     display: block;
     background-color: transparent;
   }
+
   .about-section {
-    display: flex; /* Maintain flex only on mobile */
+    display: flex;
+    /* Maintain flex only on mobile */
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
-    padding: 3rem 1.5rem; /* Add specific about padding here */
+    padding: 3rem 1.5rem;
+    /* Add specific about padding here */
     margin-bottom: 5rem;
   }
+
   .about-meta {
     width: 100%;
   }
+
   .about-bio {
     font-size: 1.5rem;
     margin-bottom: 3rem;
     border-top: 4px solid #000;
     padding-top: 1.5rem;
   }
+
   nav {
     padding: 1.5rem;
   }
+
   .nav-links {
     display: none;
   }
+
   .grid-container {
     padding: 0 1.5rem;
   }
+
   .music-section {
     padding: 0 1.5rem;
     margin-top: 5rem;
     margin-bottom: 3rem;
   }
+
   .track-row {
     grid-template-columns: 0.5fr 4fr 1.5fr;
     padding: 1rem 0;
   }
+
   .track-time {
     display: none;
   }
+
   .gallery-main-header {
     padding-left: 1.5rem;
     font-size: 2rem;
     margin-top: 2rem;
     padding-bottom: 1.5rem;
   }
+
   .gallery-section-container {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
   .gallery-block-header {
     padding: 2rem 1.5rem;
   }
+
   .horizontal-scroll-container {
     padding: 2vh 1.5rem;
   }
+
   .gallery-arrow-btn {
     display: none;
   }
+
   .gallery-content-wrapper.open {
-    height: 45vh; /* Smaller total container footprint on mobile */
+    height: 45vh;
+    /* Smaller total container footprint on mobile */
   }
+
   .gallery-item-wrapper {
-    height: 35vh; /* Much smaller image height on mobile */
+    height: 35vh;
+    /* Much smaller image height on mobile */
   }
 }
 
@@ -920,12 +995,15 @@ footer {
 
 @media (max-width: 768px) {
   .contact-section {
-    padding: 3rem 1.5rem; /* Added top and bottom padding */
+    padding: 3rem 1.5rem;
+    /* Added top and bottom padding */
   }
+
   .contact-container {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
   .contact-info p {
     max-width: 100%;
   }
@@ -934,7 +1012,8 @@ footer {
 /* --- SCROLL REVEAL ANIMATIONS --- */
 .reveal {
   opacity: 0;
-  transform: translateY(40px); /* Start slightly down */
+  transform: translateY(40px);
+  /* Start slightly down */
   transition:
     opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
     transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
@@ -943,7 +1022,6 @@ footer {
 
 .reveal.active {
   opacity: 1;
-  transform: translateY(0); /* Move strictly into place */
+  transform: translateY(0);
+  /* Move strictly into place */
 }
-
-

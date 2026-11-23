@@ -19,6 +19,27 @@ export const ASSETS = {
   headphones: "https://res.cloudinary.com/diqsvuvxx/image/upload/v1771573589/Gemini_Generated_Image_3my3kp3my3kp3my3_y23s39.png"
 };
 
+export const MUSTANG_2026_IMAGES = [
+  "/mustang2026/IMG_3410.jpg",
+  "/mustang2026/IMG_3437.jpg",
+  "/mustang2026/IMG_3464.jpg",
+  "/mustang2026/IMG_3494.jpg",
+  "/mustang2026/IMG_4739.jpg",
+  "/mustang2026/IMG_4788.jpg",
+  "/mustang2026/IMG_4896_Original.jpg",
+  "/mustang2026/IMG_4902.jpg",
+];
+
+export const GOA_2026_IMAGES = [
+  "/goa2026/goa_1.jpg",
+  "/goa2026/goa_2.jpg",
+  "/goa2026/goa_3.jpg",
+  "/goa2026/goa_4.jpg",
+  "/goa2026/goa_5.jpg",
+  "/goa2026/goa_6.jpg",
+  "/goa2026/goa_7.jpg",
+];
+
 // --- MUSIC DATA ---
 export const TRACKS = [
   {

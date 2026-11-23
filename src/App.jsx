@@ -3,7 +3,7 @@ import Lenis from "@studio-freight/lenis";
 import "./App.css";
 
 // Extracted Data & Components
-import { ASSETS, YOUTUBE_VIDEOS } from "./data/constants.js";
+import { ASSETS, YOUTUBE_VIDEOS, MUSTANG_2026_IMAGES, GOA_2026_IMAGES } from "./data/constants.js";
 import MusicSection from "./components/MusicSection";
 import GalleryBlock from "./components/GalleryBlock";
 import GearSection from "./components/GearSection";
@@ -179,17 +179,19 @@ const App = () => {
               </div>
               <div className="about-bio">
                 <p>
-                  Musician, singer-songwriter, and producer exploring the
-                  intersection of sound and visual art.
+                  I'm a musician, producer, and educator who also works in travel. My work is a way of documenting life as I see it, through music and through pictures.
                   <br />
                   <br />
-                  My work is rooted in the stories I see and rawness of live
-                  performance. From the chaotic streets of Kathmandu to the
-                  silence of the Mustang mountains, I document what I see and
-                  translate what I hear.
+                  I write and record my own songs, perform them live, and produce for other artists. Whether it's a song or an image, I try to capture something true and share it with the people who need to hear or see it.
                   <br />
                   <br />
-                  Beyond that, I steer a travel company - curating raw, immersive journeys through these same landscapes.
+                  Teaching is a big part of what I do. I enjoy sharing what I've learned and learning from the people in the room.
+                  <br />
+                  <br />
+                  I also work in travel, bringing people to Nepal and showing them the country as I know it. I want visitors to meet the place and its people, and leave with more than a postcard.
+                  <br />
+                  <br />
+                  I'm always open to new collaborations, so feel free to get in touch.
                 </p>
               </div>
             </section>
@@ -312,6 +314,18 @@ const App = () => {
             <h1 className="gallery-main-header">
               GALLERIES
             </h1>
+            <GalleryBlock
+              title="MUSTANG"
+              year="2026"
+              images={MUSTANG_2026_IMAGES}
+              onCursorHover={setIsHoveringBlock}
+            />
+            <GalleryBlock
+              title="GOA"
+              year="2026"
+              images={GOA_2026_IMAGES}
+              onCursorHover={setIsHoveringBlock}
+            />
             <GalleryBlock
               title="MUSTANG"
               year="2025"

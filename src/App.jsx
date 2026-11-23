@@ -182,16 +182,7 @@ const App = () => {
                   I'm a musician, producer, and educator who also works in travel. My work is a way of documenting life as I see it, through music and through pictures.
                   <br />
                   <br />
-                  I write and record my own songs, perform them live, and produce for other artists. Whether it's a song or an image, I try to capture something true and share it with the people who need to hear or see it.
-                  <br />
-                  <br />
-                  Teaching is a big part of what I do. I enjoy sharing what I've learned and learning from the people in the room.
-                  <br />
-                  <br />
-                  I also work in travel, bringing people to Nepal and showing them the country as I know it. I want visitors to meet the place and its people, and leave with more than a postcard.
-                  <br />
-                  <br />
-                  I'm always open to new collaborations, so feel free to get in touch.
+                  I write, record, and perform my own songs, and I produce for other artists. I also teach, and I bring people to Nepal to experience the country beyond the postcard.
                 </p>
               </div>
             </section>
